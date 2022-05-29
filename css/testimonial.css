@@ -1,0 +1,128 @@
+.testimonial-outer-container {
+    width: 80%;
+    height: 100vh;
+    padding: 2em 0px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+
+.testimonial-outer-container h3::before {
+    content: " ";
+    height: 100%;
+    width: 0px;
+    padding-left: 0.35em;
+    margin-right:1em;
+    border-radius: 0.35em;
+    background-color: #F2FA5A;
+}
+
+.testimonial-inner-container .floating-triangle {
+    z-index: 0;
+}
+
+.testimonial-inner-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial-message-container {
+    height: max-content;
+    max-width: 70%;
+    background-color: #FFF;
+    padding: 2em;
+    border-radius: 1em;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.testimonial-messages-container {
+    display: flex; 
+    flex-flow: column;
+    align-items: center;
+
+}
+.testimonial-message-container p {
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 1em;
+}
+.testimonial-message-container span {
+    font-size: 12px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--primary-blue);
+}
+
+/* 
+=======================================
+        QUERY FOR CARD CONTAINER
+=======================================
+*/
+
+/* 
+=======================================
+        QUERY FOR TABLET
+=======================================
+*/
+@media screen and (min-width: 600px) and (max-width: 767px) {
+}
+@media screen and (min-width: 768px) and (max-width: 990px) {
+}
+@media screen and (min-width: 991px) and (max-width: 1023px) {
+}
+@media screen and (min-width: 1024px) and (max-width: 1275px) {
+}
+
+/* 
+=======================================
+        QUERY FOR DESKTOP
+=======================================
+*/
+@media screen and (min-width: 1276px) and (max-width: 1365px) {
+}
+@media screen and (min-width: 1366px) and (max-width: 1439px) {
+}
+@media screen and (min-width: 1440px) and (max-width: 1679px) {
+}
+@media screen and (min-width: 1680px) and (max-width: 1919px) {
+}
+@media screen and (min-width: 1920px) and (max-width: 2559px) {
+}
+@media screen and (min-width: 2560px) and (max-width: 3839px) {
+}
+@media screen and (min-width: 3840px) and (max-width: 4095px) {
+}
+@media screen and (min-width: 4096px) and (max-width: 5117px) {
+}
+@media screen and (min-width: 5118px) {
+    
+}
+
+/* 
+=======================================
+        QUERY FOR MOBILE
+=======================================
+*/
+@media screen and (max-width: 413px) {
+    .testimonial-message-container {
+        max-width: 90%;
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 599px) {
+}
+@media screen and (min-width: 414px) and (max-width: 479px) {
+}
+/* 
+=======================================
+        QUERY FOR CARD CONTAINER
+=======================================
