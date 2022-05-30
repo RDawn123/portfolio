@@ -124,6 +124,9 @@
     .project-card-outer-container {
         --cards-in-row: 1;
     } 
+    .project-card-inner-container:hover .view-more-inner-modal  {
+        pointer-events: none;
+    }
 }
 @media screen and (min-width: 991px) and (max-width: 1023px) {
     .portfolio-outer-container {
@@ -132,6 +135,9 @@
     .project-card-outer-container {
         --cards-in-row: 1;
     } 
+    .project-card-inner-container:hover .view-more-inner-modal  {
+        pointer-events: none;
+    }
 }
 @media screen and (min-width: 1024px) and (max-width: 1275px) {
     .portfolio-outer-container {
@@ -140,6 +146,9 @@
     .project-card-outer-container {
         --cards-in-row: 1;
     } 
+    .project-card-inner-container:hover .view-more-inner-modal  {
+        pointer-events: none;
+    }
 }
 
 /* 
@@ -187,6 +196,9 @@
     .project-card-outer-container {
         --cards-in-row: 1;
     } 
+    .project-card-inner-container:hover .view-more-inner-modal  {
+        pointer-events: none;
+    }
 }
 @media screen and (min-width: 414px) and (max-width: 479px) {
     .portfolio-outer-container {
@@ -195,6 +207,9 @@
     .project-card-outer-container {
         --cards-in-row: 1;
     } 
+    .project-card-inner-container:hover .view-more-inner-modal  {
+        pointer-events: none;
+    }
 }
 /* 
 =======================================

@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./css/nav-bar.css">
     <link rel="stylesheet" href="./css/slide-in.css">
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="./js/typewriter.js"></script>
 </head>
 <body>
     <nav class="nav-bar-outer-container">
@@ -117,11 +118,7 @@
                 <div class="about-me-container-columns">
                     <div class="about-me-container-description slide-in-text">
                         <h3>ABOUT ME</h3>
-                        <h1>
-                            Developer , <br />
-                            Explorer , <br /> 
-                            Photographer
-                        </h1>
+                        <h1 class="typewriter"></h1>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea .
                         </p>
@@ -163,11 +160,7 @@
                 <div class="skills-container-columns">
                     <div class="skills-container-description slide-in-text">
                         <h3>MY SKILLS</h3>
-                        <h1>
-                            Things that <br />
-                            I can do <br />
-                            For Clients 
-                        </h1>
+                        <h1 class="typewriter2"></h1>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea .
                         </p>
@@ -315,4 +308,28 @@
 <script src="./js/nav-bar.js" ></script>
 <script src="./js/text-slde-in.js" ></script>
 <script src="./js/testimonial-slider.js"></script>
+<script>
+    var container1 = document.querySelector(".typewriter");
+    var container2 = document.querySelector(".typewriter2");
+    var typewritter1 = new TsTypeWritter(container1, 200, 100, true);
+    var typewritter2 = new TsTypeWritter(container2, 200, 100, true);
+    typewritter1
+        .write("Developer \n")
+        .pause(1000)
+        .write("Explorer\n")
+        .write("Photographer")
+        .pause(1000)
+        .deleteAll()
+        .start();
+                             
+    typewritter2
+        .write("Things that \n")
+        .pause(1000)
+        .write("I can do\n")
+        .write("For Clients")
+        .pause(1000)
+        .deleteAll()
+        .start();
+        
+</script>
 </html>

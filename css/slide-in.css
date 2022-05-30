@@ -1,5 +1,5 @@
 .slide-in-text {
-    transition: transform ease-in 250ms;
+    transition: transform ease-in 450ms;
     transform: translateY(300px);
 }
 
