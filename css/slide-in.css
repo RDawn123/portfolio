@@ -1,0 +1,8 @@
+.slide-in-text {
+    transition: transform ease-in 250ms;
+    transform: translateY(300px);
+}
+
+.slide-in-text.appear {
+    transform:  translateY(0);
+}
