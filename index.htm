@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/nav-bar.css">
     <link rel="stylesheet" href="./css/slide-in.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="./js/typewriter.js"></script>
 </head>
 <body>
@@ -29,17 +29,17 @@
             </li>
             <li class="nav-option flex-box"></li>
             <li class="nav-option">
-            <a href="#">
+            <a href="javascript:void(0);" data-section="about-me">
                 About Me
             </a>
             </li>
             <li class="nav-option">
-            <a href="#">
+            <a href="javascript:void(0);" data-section="skills">
                 My Skills
             </a>
             </li>
             <li class="nav-option">
-            <a href="#">
+            <a href="javascript:void(0);" data-section="portfolio">
                 Portfolio
             </a>
             </li>
@@ -55,17 +55,17 @@
                         <h1>BAURI</h1>
                     </div>
                     <div class="header-about-me-section">
-                        <h6># ABOUT ME</h6>
+                        <h6 class="about-me-anchor" data-section="about-me"># ABOUT ME</h6>
                         <p>Experienced Fullstack Developer looking for a new oppertunity to shine .</p>
-                        <span>I’m a Fullstack Developer . Expertised in backend , system design , UI/UX development .</span>
+                        <span>I&apos;m a Fullstack Developer . Expertised in backend , system design , UI/UX development .</span>
                     </div>
                     <div class="header-buttons-container">
-                        <a href="#">
+                        <a href="mailto:chandanbauri441@gmail.com">
                             <div class="actions filled-action">
                                 Contact Me
                             </div>
                         </a>
-                        <a href="#">
+                        <a href="./assets/CHANDAN BAURI RESUME.pdf" download>
                             <div class="actions unfilled-action">
                                 Download CV
                             </div>
@@ -88,7 +88,7 @@
     <!-- HEADER SECTION -->
 
     <!-- ABOUT ME SECTION -->
-    <section class="section-outer-container" id="about-me "> 
+    <section class="section-outer-container" id="about-me"> 
         <div class="section-inner-container">
             <div class="about-me-container">
                 <div class="about-me-container-columns">
@@ -172,7 +172,7 @@
     <!-- MY SKILLS SECTION -->
 
     <!-- PORTFOLIO SECTION -->
-    <section class="section-outer-container auto-height"> 
+    <section class="section-outer-container auto-height" id="portfolio"> 
         <div class="section-inner-container">
             <div class="portfolio-outer-container">
                 <h3>PORTFOLIO</h3>
@@ -189,7 +189,7 @@
                                 </div>
                             </div>
                             <div class="project-card-description-container">
-                                <span>Food Dhaba</span>
+                                <span>Food Delivery System</span>
                             </div>
                         </div>
                     </div>
@@ -204,7 +204,7 @@
                                 </div>
                             </div>
                             <div class="project-card-description-container">
-                                <span>Food Dhaba</span>
+                                <span>Online Platform for Gaming</span>
                             </div>
                         </div>
                     </div>
@@ -219,7 +219,7 @@
                                 </div>
                             </div>
                             <div class="project-card-description-container">
-                                <span>Food Dhaba</span>
+                                <span>Financial Advisory Platform</span>
                             </div>
                         </div>
                     </div>
@@ -234,7 +234,7 @@
                                 </div>
                             </div>
                             <div class="project-card-description-container">
-                                <span>Food Dhaba</span>
+                                <span>Rainbow Hospitals</span>
                             </div>
                         </div>
                     </div>
@@ -286,17 +286,17 @@
         <div class="footer-inner-container">
             <p>Copyright © 2018 <b>WEBCHAL</b></p>
             <div class="socials-container">
-                <a href="" class="social-icon-container">
+                <a href="https://github.com/chandanbauri" class="social-icon-container">
                     <div>
                         <img src="./assets/footer/GitHub.png" alt="">
                     </div>
                 </a>
-                <a href="" class="social-icon-container">
+                <a href="https://www.linkedin.com/in/chandan-bauri-005988135/" class="social-icon-container">
                     <div>
                         <img src="./assets/footer/LinkedIn Circled.png" alt="">
                     </div>
                 </a>
-                <a href="" class="social-icon-container">
+                <a href="https://www.facebook.com/prince.sufu/" class="social-icon-container">
                     <div>
                         <img src="./assets/footer/Facebook Circled.png" alt="">
                     </div>
@@ -304,32 +304,32 @@
             </div>
         </div>
     </footer>
+    <script>
+        var container1 = document.querySelector(".typewriter");
+        var container2 = document.querySelector(".typewriter2");
+        var typewritter1 = new TsTypeWritter(container1, 200, 100, true);
+        var typewritter2 = new TsTypeWritter(container2, 200, 100, true);
+        typewritter1
+            .write("Developer \n")
+            .pause(500)
+            .write("Explorer\n")
+            .write("Photographer")
+            .pause(1000)
+            .deleteAll()
+            .start();
+                                 
+        typewritter2
+            .write("Things that \n")
+            .pause(500)
+            .write("I can do\n")
+            .write("For Clients")
+            .pause(1000)
+            .deleteAll()
+            .start();
+            
+    </script>
+    <script src="./js/nav-bar.js" ></script>
+    <script src="./js/text-slde-in.js" ></script>
+    <script src="./js/testimonial-slider.js"></script>
 </body>
-<script src="./js/nav-bar.js" ></script>
-<script src="./js/text-slde-in.js" ></script>
-<script src="./js/testimonial-slider.js"></script>
-<script>
-    var container1 = document.querySelector(".typewriter");
-    var container2 = document.querySelector(".typewriter2");
-    var typewritter1 = new TsTypeWritter(container1, 200, 100, true);
-    var typewritter2 = new TsTypeWritter(container2, 200, 100, true);
-    typewritter1
-        .write("Developer \n")
-        .pause(1000)
-        .write("Explorer\n")
-        .write("Photographer")
-        .pause(1000)
-        .deleteAll()
-        .start();
-                             
-    typewritter2
-        .write("Things that \n")
-        .pause(1000)
-        .write("I can do\n")
-        .write("For Clients")
-        .pause(1000)
-        .deleteAll()
-        .start();
-        
-</script>
 </html>
