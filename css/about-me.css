@@ -20,6 +20,7 @@
     height: 100%;
     flex: 0 0 calc(100% - var(--container-width));
     width: calc(100% - var(--container-width));
+    padding-bottom: 1em;
    }
 
 .skill-card-outer-container {

@@ -69,7 +69,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0px 4em;
+    padding: 4em 4em 0px 4em;
     background-color: #FFF;
 }
 
