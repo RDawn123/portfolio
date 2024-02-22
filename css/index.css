@@ -80,6 +80,9 @@
 .header-columns:last-child {
     background-color: var(--primary-blue);
 }
+.header-main-image-container{
+    max-width: 5.5rem;
+}
 .header-title-container {
     --header-title-ratio: 1.71875;
     --header-title-h2: 80px;
